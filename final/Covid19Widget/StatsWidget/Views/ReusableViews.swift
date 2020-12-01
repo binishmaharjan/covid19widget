@@ -59,7 +59,6 @@ struct InfoRowView: View {
     }
 }
 
-// MARK: Helper View
 struct TrailingText: View {
     
     let string: String
