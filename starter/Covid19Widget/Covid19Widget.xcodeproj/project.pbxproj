@@ -11,32 +11,12 @@
 		64AC499C256CCEA9000321DA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AC499B256CCEA9000321DA /* ContentView.swift */; };
 		64AC499E256CCEAB000321DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64AC499D256CCEAB000321DA /* Assets.xcassets */; };
 		64AC49A1256CCEAB000321DA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64AC49A0256CCEAB000321DA /* Preview Assets.xcassets */; };
-		64AC49B0256CCEBD000321DA /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64AC49AF256CCEBD000321DA /* WidgetKit.framework */; };
-		64AC49B2256CCEBD000321DA /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64AC49B1256CCEBD000321DA /* SwiftUI.framework */; };
-		64AC49B5256CCEBD000321DA /* StatsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AC49B4256CCEBD000321DA /* StatsWidget.swift */; };
-		64AC49B7256CCEBE000321DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64AC49B6256CCEBE000321DA /* Assets.xcassets */; };
-		64AC49BB256CCEBE000321DA /* StatsWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 64AC49AD256CCEBD000321DA /* StatsWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		64AC49C4256CCEE3000321DA /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AC49C3256CCEE3000321DA /* DataLoader.swift */; };
-		64AC49C5256CCEE3000321DA /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AC49C3256CCEE3000321DA /* DataLoader.swift */; };
 		64AC49CA256CCEED000321DA /* CountryStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AC49C9256CCEED000321DA /* CountryStats.swift */; };
-		64AC49CB256CCEED000321DA /* CountryStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AC49C9256CCEED000321DA /* CountryStats.swift */; };
 		64AC49D8256CE055000321DA /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AC49D7256CE055000321DA /* String+Extension.swift */; };
-		64AC49D9256CE055000321DA /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AC49D7256CE055000321DA /* String+Extension.swift */; };
 		64AC49E6256CE3C4000321DA /* Numeric+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AC49E5256CE3C4000321DA /* Numeric+Extension.swift */; };
-		64AC49E7256CE3C4000321DA /* Numeric+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AC49E5256CE3C4000321DA /* Numeric+Extension.swift */; };
 		64AC49ED256CE5C2000321DA /* ReusableViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AC49EC256CE5C2000321DA /* ReusableViews.swift */; };
-		64AC49EE256CE5C2000321DA /* ReusableViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AC49EC256CE5C2000321DA /* ReusableViews.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		64AC49B9256CCEBE000321DA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 64AC498E256CCEA9000321DA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 64AC49AC256CCEBD000321DA;
-			remoteInfo = StatsWidgetExtension;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		64AC49BF256CCEBE000321DA /* Embed App Extensions */ = {
@@ -45,7 +25,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				64AC49BB256CCEBE000321DA /* StatsWidgetExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,12 +38,8 @@
 		64AC499D256CCEAB000321DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64AC49A0256CCEAB000321DA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		64AC49A2256CCEAB000321DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		64AC49AD256CCEBD000321DA /* StatsWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = StatsWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		64AC49AF256CCEBD000321DA /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		64AC49B1256CCEBD000321DA /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		64AC49B4256CCEBD000321DA /* StatsWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsWidget.swift; sourceTree = "<group>"; };
-		64AC49B6256CCEBE000321DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		64AC49B8256CCEBE000321DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64AC49C3256CCEE3000321DA /* DataLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
 		64AC49C9256CCEED000321DA /* CountryStats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryStats.swift; sourceTree = "<group>"; };
 		64AC49D7256CE055000321DA /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
@@ -80,15 +55,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		64AC49AA256CCEBD000321DA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				64AC49B2256CCEBD000321DA /* SwiftUI.framework in Frameworks */,
-				64AC49B0256CCEBD000321DA /* WidgetKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -96,7 +62,6 @@
 			isa = PBXGroup;
 			children = (
 				64AC4998256CCEA9000321DA /* Covid19Widget */,
-				64AC49B3256CCEBD000321DA /* StatsWidget */,
 				64AC49AE256CCEBD000321DA /* Frameworks */,
 				64AC4997256CCEA9000321DA /* Products */,
 			);
@@ -106,7 +71,6 @@
 			isa = PBXGroup;
 			children = (
 				64AC4996256CCEA9000321DA /* Covid19Widget.app */,
-				64AC49AD256CCEBD000321DA /* StatsWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,6 +78,10 @@
 		64AC4998256CCEA9000321DA /* Covid19Widget */ = {
 			isa = PBXGroup;
 			children = (
+				64AC49D6256CE03C000321DA /* Extension */,
+				64AC49CE256CD861000321DA /* Views */,
+				64AC49C2256CCEE3000321DA /* Shared */,
+				64AC49C8256CCEED000321DA /* Entities */,
 				64AC4999256CCEA9000321DA /* Covid19WidgetApp.swift */,
 				64AC499B256CCEA9000321DA /* ContentView.swift */,
 				64AC499D256CCEAB000321DA /* Assets.xcassets */,
@@ -138,20 +106,6 @@
 				64AC49B1256CCEBD000321DA /* SwiftUI.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		64AC49B3256CCEBD000321DA /* StatsWidget */ = {
-			isa = PBXGroup;
-			children = (
-				64AC49D6256CE03C000321DA /* Extension */,
-				64AC49CE256CD861000321DA /* Views */,
-				64AC49C2256CCEE3000321DA /* Shared */,
-				64AC49C8256CCEED000321DA /* Entities */,
-				64AC49B4256CCEBD000321DA /* StatsWidget.swift */,
-				64AC49B6256CCEBE000321DA /* Assets.xcassets */,
-				64AC49B8256CCEBE000321DA /* Info.plist */,
-			);
-			path = StatsWidget;
 			sourceTree = "<group>";
 		};
 		64AC49C2256CCEE3000321DA /* Shared */ = {
@@ -202,29 +156,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				64AC49BA256CCEBE000321DA /* PBXTargetDependency */,
 			);
 			name = Covid19Widget;
 			productName = Covid19Widget;
 			productReference = 64AC4996256CCEA9000321DA /* Covid19Widget.app */;
 			productType = "com.apple.product-type.application";
-		};
-		64AC49AC256CCEBD000321DA /* StatsWidgetExtension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 64AC49BC256CCEBE000321DA /* Build configuration list for PBXNativeTarget "StatsWidgetExtension" */;
-			buildPhases = (
-				64AC49A9256CCEBD000321DA /* Sources */,
-				64AC49AA256CCEBD000321DA /* Frameworks */,
-				64AC49AB256CCEBD000321DA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = StatsWidgetExtension;
-			productName = StatsWidgetExtension;
-			productReference = 64AC49AD256CCEBD000321DA /* StatsWidgetExtension.appex */;
-			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -236,9 +172,6 @@
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
 					64AC4995256CCEA9000321DA = {
-						CreatedOnToolsVersion = 12.0;
-					};
-					64AC49AC256CCEBD000321DA = {
 						CreatedOnToolsVersion = 12.0;
 					};
 				};
@@ -257,7 +190,6 @@
 			projectRoot = "";
 			targets = (
 				64AC4995256CCEA9000321DA /* Covid19Widget */,
-				64AC49AC256CCEBD000321DA /* StatsWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -269,14 +201,6 @@
 			files = (
 				64AC49A1256CCEAB000321DA /* Preview Assets.xcassets in Resources */,
 				64AC499E256CCEAB000321DA /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		64AC49AB256CCEBD000321DA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				64AC49B7256CCEBE000321DA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,28 +221,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		64AC49A9256CCEBD000321DA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				64AC49EE256CE5C2000321DA /* ReusableViews.swift in Sources */,
-				64AC49C5256CCEE3000321DA /* DataLoader.swift in Sources */,
-				64AC49B5256CCEBD000321DA /* StatsWidget.swift in Sources */,
-				64AC49CB256CCEED000321DA /* CountryStats.swift in Sources */,
-				64AC49E7256CE3C4000321DA /* Numeric+Extension.swift in Sources */,
-				64AC49D9256CE055000321DA /* String+Extension.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		64AC49BA256CCEBE000321DA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 64AC49AC256CCEBD000321DA /* StatsWidgetExtension */;
-			targetProxy = 64AC49B9256CCEBE000321DA /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		64AC49A3256CCEAB000321DA /* Debug */ = {
@@ -481,46 +384,6 @@
 			};
 			name = Release;
 		};
-		64AC49BD256CCEBE000321DA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = StatsWidget/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fenrir-inc.team3.blinky2019.Covid19Widget.StatsWidget";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		64AC49BE256CCEBE000321DA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = StatsWidget/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fenrir-inc.team3.blinky2019.Covid19Widget.StatsWidget";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -538,15 +401,6 @@
 			buildConfigurations = (
 				64AC49A6256CCEAB000321DA /* Debug */,
 				64AC49A7256CCEAB000321DA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		64AC49BC256CCEBE000321DA /* Build configuration list for PBXNativeTarget "StatsWidgetExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				64AC49BD256CCEBE000321DA /* Debug */,
-				64AC49BE256CCEBE000321DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

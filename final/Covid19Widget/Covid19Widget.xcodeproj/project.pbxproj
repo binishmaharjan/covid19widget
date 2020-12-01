@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64A7E3FF257621D000BBDF6E /* CountryStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AC49C9256CCEED000321DA /* CountryStats.swift */; };
 		64AC499A256CCEA9000321DA /* Covid19WidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AC4999256CCEA9000321DA /* Covid19WidgetApp.swift */; };
 		64AC499C256CCEA9000321DA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AC499B256CCEA9000321DA /* ContentView.swift */; };
 		64AC499E256CCEAB000321DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64AC499D256CCEAB000321DA /* Assets.xcassets */; };
@@ -19,7 +20,6 @@
 		64AC49C4256CCEE3000321DA /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AC49C3256CCEE3000321DA /* DataLoader.swift */; };
 		64AC49C5256CCEE3000321DA /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AC49C3256CCEE3000321DA /* DataLoader.swift */; };
 		64AC49CA256CCEED000321DA /* CountryStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AC49C9256CCEED000321DA /* CountryStats.swift */; };
-		64AC49CB256CCEED000321DA /* CountryStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AC49C9256CCEED000321DA /* CountryStats.swift */; };
 		64AC49D8256CE055000321DA /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AC49D7256CE055000321DA /* String+Extension.swift */; };
 		64AC49D9256CE055000321DA /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AC49D7256CE055000321DA /* String+Extension.swift */; };
 		64AC49E6256CE3C4000321DA /* Numeric+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AC49E5256CE3C4000321DA /* Numeric+Extension.swift */; };
@@ -114,6 +114,10 @@
 		64AC4998256CCEA9000321DA /* Covid19Widget */ = {
 			isa = PBXGroup;
 			children = (
+				64AC49D6256CE03C000321DA /* Extension */,
+				64AC49CE256CD861000321DA /* Views */,
+				64AC49C2256CCEE3000321DA /* Shared */,
+				64AC49C8256CCEED000321DA /* Entities */,
 				64AC4999256CCEA9000321DA /* Covid19WidgetApp.swift */,
 				64AC499B256CCEA9000321DA /* ContentView.swift */,
 				64AC499D256CCEAB000321DA /* Assets.xcassets */,
@@ -143,10 +147,6 @@
 		64AC49B3256CCEBD000321DA /* StatsWidget */ = {
 			isa = PBXGroup;
 			children = (
-				64AC49D6256CE03C000321DA /* Extension */,
-				64AC49CE256CD861000321DA /* Views */,
-				64AC49C2256CCEE3000321DA /* Shared */,
-				64AC49C8256CCEED000321DA /* Entities */,
 				64AC49B4256CCEBD000321DA /* StatsWidget.swift */,
 				64AC49B6256CCEBE000321DA /* Assets.xcassets */,
 				64AC49B8256CCEBE000321DA /* Info.plist */,
@@ -303,8 +303,8 @@
 			files = (
 				64AC49EE256CE5C2000321DA /* ReusableViews.swift in Sources */,
 				64AC49C5256CCEE3000321DA /* DataLoader.swift in Sources */,
+				64A7E3FF257621D000BBDF6E /* CountryStats.swift in Sources */,
 				64AC49B5256CCEBD000321DA /* StatsWidget.swift in Sources */,
-				64AC49CB256CCEED000321DA /* CountryStats.swift in Sources */,
 				64AC49E7256CE3C4000321DA /* Numeric+Extension.swift in Sources */,
 				64AC49D9256CE055000321DA /* String+Extension.swift in Sources */,
 			);

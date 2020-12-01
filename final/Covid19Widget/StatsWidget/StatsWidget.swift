@@ -8,24 +8,20 @@
 import WidgetKit
 import SwiftUI
 
-/// Timeline Provider
-struct CountryStatsTimelineProvider: TimelineProvider {
+struct Provider: TimelineProvider {
 
-    typealias Entry = CountryStatsEntry
+    typealias Entry = SimpleEntry
     
-    // Placeholder
-    func placeholder(in context: Context) -> CountryStatsEntry {
-        CountryStatsEntry(date: Date(), stats: .default)
+    func placeholder(in context: Context) -> SimpleEntry {
+        SimpleEntry(date: Date(), stats: .default)
     }
     
-    /// Snaphot
-    func getSnapshot(in context: Context, completion: @escaping (CountryStatsEntry) -> Void) {
-        let entry = CountryStatsEntry(date: Date(), stats: .default)
+    func getSnapshot(in context: Context, completion: @escaping (SimpleEntry) -> Void) {
+        let entry = SimpleEntry(date: Date(), stats: .default)
         completion(entry)
     }
     
-    // Timeline
-    func getTimeline(in context: Context, completion: @escaping (Timeline<CountryStatsEntry>) -> Void) {
+    func getTimeline(in context: Context, completion: @escaping (Timeline<SimpleEntry>) -> Void) {
         let currentDate = Date()
         let refreshDate = Calendar.current.date(byAdding: .minute, value: 60 * 24, to: currentDate)!
         
@@ -38,25 +34,22 @@ struct CountryStatsTimelineProvider: TimelineProvider {
                 stats = .default
             }
 
-            let entry = CountryStatsEntry(date:currentDate, stats: stats)
+            let entry = SimpleEntry(date:currentDate, stats: stats)
             let timeline = Timeline(entries: [entry], policy: .after(refreshDate))
 
             completion(timeline)
         }
     }
-    
 }
 
-/// TimelineEntry
-struct CountryStatsEntry: TimelineEntry {
+struct SimpleEntry: TimelineEntry {
     public let date: Date
     public let stats: CountryStats
 }
 
-/// Widget View
-struct CountryStatsEntryView: View {
+struct EntryView: View {
     @Environment(\.widgetFamily) var family: WidgetFamily
-    let entry: CountryStatsEntry
+    let entry: SimpleEntry
     
     var stats: Covid19Stats {
         entry.stats.last ?? .default
@@ -102,24 +95,22 @@ struct CountryStatsEntryView: View {
     }
 }
 
-/// Widget
 @main
 struct StatsWidget: Widget {
     let kind: String = "StatsWidget"
 
     var body: some WidgetConfiguration {
-        StaticConfiguration(kind: kind, provider: CountryStatsTimelineProvider()) { entry in
-            CountryStatsEntryView(entry: entry)
+        StaticConfiguration(kind: kind, provider: Provider()) { entry in
+            EntryView(entry: entry)
         }
         .configurationDisplayName("My Widget")
         .description("This is an example widget.")
     }
 }
 
-/// Preview
 struct StatsWidget_Previews: PreviewProvider {
     static var previews: some View {
-        CountryStatsEntryView(entry: CountryStatsEntry(date: Date(), stats: .default))
+        EntryView(entry: SimpleEntry(date: Date(), stats: .default))
             .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }
