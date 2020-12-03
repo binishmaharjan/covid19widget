@@ -111,6 +111,6 @@ struct StatsWidget: Widget {
 struct StatsWidget_Previews: PreviewProvider {
     static var previews: some View {
         EntryView(entry: SimpleEntry(date: Date(), stats: .default))
-            .previewContext(WidgetPreviewContext(family: .systemSmall))
+            .previewContext(WidgetPreviewContext(family: .systemMedium))
     }
 }

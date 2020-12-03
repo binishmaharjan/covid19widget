@@ -26,4 +26,22 @@ struct DataLoader {
         
         task.resume()
     }
+    
+    static func fetchSummary(completion: @escaping (Result<Summary, Error>) -> Void) {
+        let url = URL(string: "https://api.covid19api.com/summary")!
+        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+            guard error == nil else {
+                completion(.failure(error!))
+                return
+            }
+            do {
+                let summary = try JSONDecoder().decode(Summary.self, from: data!)
+                completion(.success(summary))
+            } catch {
+                completion(.failure(error))
+            }
+        }
+        
+        task.resume()
+    }
 }
