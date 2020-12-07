@@ -70,6 +70,7 @@ struct EntryView: View {
                 Spacer()
             }
             .padding()
+            .widgetURL(URL(string: stats.country))
         default:
             VStack() {
                 TitleView(title: stats.country,
@@ -94,6 +95,8 @@ struct EntryView: View {
         }
     }
 }
+
+
 
 @main
 struct StatsWidget: Widget {
