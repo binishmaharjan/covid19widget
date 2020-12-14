@@ -106,6 +106,7 @@ struct StatsWidget: Widget {
         StaticConfiguration(kind: kind, provider: Provider()) { entry in
             EntryView(entry: entry)
         }
+        .supportedFamilies([.systemSmall, .systemMedium])
         .configurationDisplayName("My Widget")
         .description("This is an example widget.")
     }
